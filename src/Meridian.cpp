@@ -10,7 +10,8 @@
 // | 引数２　　:  配列の長さ
 // | 戻り値　　:  short型. チェックサム値
 // +----------------------------------------------------------------------
-short Meridian::checksum_val(short arr[], int len)
+//short Meridian::checksum_val(short arr[], int len)
+short checksum_val(short arr[], int len)
 {
     int cksm = 0;
     for (int i = 0; i < len - 1; i++)
@@ -20,3 +21,11 @@ short Meridian::checksum_val(short arr[], int len)
     return short(~cksm);
     // return ~cksm;//★もとの式　動いたら消す
 }
+
+
+// test
+int test(int _a, int _b){
+    int sum = _a + _b;
+    return sum;
+}
+
