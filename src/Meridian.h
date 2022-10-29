@@ -13,6 +13,7 @@ class checksum_val
   public:
     checksum_val(short _arr[], int _len);
   private:
+    int i;
     int _cksm;
 };
 
