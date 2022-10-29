@@ -1,1 +1,4 @@
-// keywords
+cksm_val  KEYWORD1
+cksm_rslt  KEYWORD1
+float2HfShort  KEYWORD1
+HfShort2float  KEYWORD1
