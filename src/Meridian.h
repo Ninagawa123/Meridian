@@ -11,11 +11,9 @@
 class checksum_val
 {
   public:
-    checksum_val(short arr[], int len);
-    short arr[];
-    int len;
+    checksum_val(short _arr[], int _len);
   private:
-    int cksm;
+    int _cksm;
 };
 
 #endif
