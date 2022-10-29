@@ -10,6 +10,8 @@
 
 short checksum_val(short _arr[], int _len);
 
+int test(int _a, int _b);
+
 /*
 class checksum_val
 {
