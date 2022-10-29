@@ -8,6 +8,9 @@
 #define Meridian_h
 #include "Arduino.h"
 
+short checksum_val(short _arr[], int _len);
+
+/*
 class checksum_val
 {
   public:
@@ -16,5 +19,6 @@ class checksum_val
     int i;
     int _cksm;
 };
+*/
 
 #endif
