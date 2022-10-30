@@ -1,4 +1,3 @@
-#include "arduino.h"
 #include "Meridian.h"
 
 ARDUINO_ROBOTICS_ESPTEENSY_MERIDIAN_NAMESPACE_BEGIN
