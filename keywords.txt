@@ -12,30 +12,30 @@
 #  Methods and Functions (KEYWORD2)
 ##########################################
 
-cksm_rslt		          KEYWORD2
-cksm_val		          KEYWORD2
-seq_increase_num	    KEYWORD2
-seq_compare_nums	    KEYWORD2
-seq_predict_num		    KEYWORD2
-HfShort2float		      KEYWORD2
-float2HfShort		      KEYWORD2
-Deg2Krs			          KEYWORD2
-HfDeg2Krs		          KEYWORD2
-Krs2Deg			          KEYWORD2
-Krs2HfDeg		          KEYWORD2
-Deg2RSxx		          KEYWORD2
-HfDeg2RSxx		        KEYWORD2
-RSxx2Deg		          KEYWORD2
-RSxx2HfDeg		        KEYWORD2
-print_tsy_hello		    KEYWORD2
-print_esp_hello_start	KEYWORD2
-print_esp_hello_ip	  KEYWORD2
-print_imuahrs		      KEYWORD2
-print_servo_mounts	  KEYWORD2
-print_controlpad	    KEYWORD2
-monitor_check_flow	  KEYWORD2
-monitor_joypad		    KEYWORD2
-monitor_servo_error	  KEYWORD2
+cksm_rslt             	KEYWORD2
+cksm_val              	KEYWORD2
+seq_increase_num      	KEYWORD2
+seq_compare_nums      	KEYWORD2
+seq_predict_num       	KEYWORD2
+HfShort2float         	KEYWORD2
+float2HfShort         	KEYWORD2
+Deg2Krs               	KEYWORD2
+HfDeg2Krs             	KEYWORD2
+Krs2Deg               	KEYWORD2
+Krs2HfDeg             	KEYWORD2
+Deg2RSxx              	KEYWORD2
+HfDeg2RSxx            	KEYWORD2
+RSxx2Deg              	KEYWORD2
+RSxx2HfDeg            	KEYWORD2
+print_tsy_hello       	KEYWORD2
+print_esp_hello_start 	KEYWORD2
+print_esp_hello_ip    	KEYWORD2
+print_imuahrs         	KEYWORD2
+print_servo_mounts    	KEYWORD2
+print_controlpad      	KEYWORD2
+monitor_check_flow    	KEYWORD2
+monitor_joypad       	KEYWORD2
+monitor_servo_error   	KEYWORD2
 
 ##########################################
 #  Instances (KEYWORD2)
