@@ -143,7 +143,8 @@ short Meridian::float2HfShort(float val)
  */
 int Meridian::Deg2Krs(float degree, float trim, int cw)
 {
-    float _x = 7500 + (trim * 29.6296) + (degree * 29.6296 * cw);
+    // 29.62963 = 8000 / 270 (KRS value per degree). Same factor as Krs2Deg so that the round trip returns the same value
+    float _x = 7500 + (trim * 29.62963) + (degree * 29.62963 * cw);
     if (_x > 11500) // max limit
     {
         _x = 11500;
@@ -152,7 +153,7 @@ int Meridian::Deg2Krs(float degree, float trim, int cw)
     {
         _x = 3500;
     }
-    return static_cast<int>(_x);
+    return static_cast<int>(_x + 0.5f); // round to the nearest (_x is positive here)
 }
 
 /**
@@ -165,7 +166,7 @@ int Meridian::Deg2Krs(float degree, float trim, int cw)
  */
 int Meridian::HfDeg2Krs(int hfdegree, float trim, int cw)
 {
-    float _x = 7500 + (trim * 29.6296) + (hfdegree * 0.296296 * cw);
+    float _x = 7500 + (trim * 29.62963) + (hfdegree * 0.2962963 * cw);
     if (_x > 11500) // max limit
     {
         _x = 11500;
@@ -174,7 +175,7 @@ int Meridian::HfDeg2Krs(int hfdegree, float trim, int cw)
     {
         _x = 3500;
     }
-    return static_cast<int>(_x);
+    return static_cast<int>(_x + 0.5f); // round to the nearest (_x is positive here)
 }
 
 /**
@@ -210,7 +211,7 @@ int Meridian::Krs2HfDeg(int krs, float trim, int cw)
     {
         _x = -32766;
     }
-    return static_cast<int>(_x);
+    return static_cast<int>(_x >= 0 ? _x + 0.5f : _x - 0.5f); // round to the nearest
 }
 
 /**
